@@ -1,9 +1,14 @@
 <?php
 
+if(!isset($_SESSION)){
+    session_start();
+}
+
+if ( isset( $_POST ) || empty( $_POST ) ) {
 $numeros = $_POST['tecla'];
 
 echo $numeros;
-
+}
 
 ?>
 
